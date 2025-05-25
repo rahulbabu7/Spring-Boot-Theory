@@ -1,11 +1,14 @@
 package com.rahul.firstspirng;
 
+import org.springframework.stereotype.Component;
+
+@Component  //using annotations for beans
 public class OrderSerivce {
 
     private PaymentService paymentService;
 
 
-    // from the main class we are injecting a payment service
+    //! from the main class we are injecting a payment service
      public OrderSerivce(PaymentService paymentService){
         this.paymentService = paymentService;
     }
@@ -20,6 +23,13 @@ public class OrderSerivce {
         paymentService.processPayment(10);
 
     }
+
+
+
+    //! setter injection
+    // public void setpaymentService(PaymentService paymentService){
+    //     this.paymentService = paymentService;
+    // }
 
    
 }
