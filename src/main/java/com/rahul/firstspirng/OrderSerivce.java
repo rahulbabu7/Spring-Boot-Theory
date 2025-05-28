@@ -1,8 +1,8 @@
 package com.rahul.firstspirng;
 
-import org.springframework.stereotype.Component;
+// import org.springframework.stereotype.Component;
 
-@Component  //using annotations for beans
+// @Component  //using annotations for beans
 public class OrderSerivce {
 
     private PaymentService paymentService;
@@ -16,7 +16,7 @@ public class OrderSerivce {
 
     public void placeOrder(){
 
-        //!ight coupling the orderservice depends on strive
+        //!tight coupling the orderservice depends on strive
         //! var paymentService = new StripePaymentService();
         //! paymentService.processPayment(100);
 

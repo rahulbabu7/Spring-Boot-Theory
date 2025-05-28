@@ -1,8 +1,8 @@
 package com.rahul.firstspirng;
 
-import org.springframework.stereotype.Service;
+// import org.springframework.stereotype.Service;
 
-@Service
+// @Service
 public class PaypalPaymentService implements PaymentService{
     
     @Override

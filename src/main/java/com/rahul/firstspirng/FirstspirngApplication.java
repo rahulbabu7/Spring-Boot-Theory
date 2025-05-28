@@ -2,19 +2,21 @@ package com.rahul.firstspirng;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+// import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class FirstspirngApplication {
 
 	public static void main(String[] args) {
 
+
+		SpringApplication.run(FirstspirngApplication.class, args);
 		//! WE ARE GIVING CONTROL OF OBJECTS AND DEPENDENCY TO SPRING CORE(IOC)
-		ApplicationContext context = SpringApplication.run(FirstspirngApplication.class, args);  //returns an object of type application context
+		// ApplicationContext context = SpringApplication.run(FirstspirngApplication.class, args);  //returns an object of type application context
 		
 		
-		var orderService = context.getBean(OrderSerivce.class);
-		orderService.placeOrder();
+		// var orderService = context.getBean(OrderSerivce.class);
+		// orderService.placeOrder();
 
 
 
